@@ -46,6 +46,4 @@
   position: absolute;
   color: #fff;
   font-size: 4rem;
-  left: calc(100% * random());
-  top: calc(100% * random());
 }
