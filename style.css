@@ -21,6 +21,7 @@
   background: #010161;
   height: 100%;
   width: 30%;
+  position: relative;
 }
 
 .listras {
@@ -39,4 +40,12 @@
 .whi {
   height: 80px;
   background-color: #fff;
+}
+
+.estrelas {
+  position: absolute;
+  color: #fff;
+  font-size: 4rem;
+  left: calc(100% * random());
+  top: calc(100% * random());
 }
