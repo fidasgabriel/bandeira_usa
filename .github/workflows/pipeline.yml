@@ -16,7 +16,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
         with:
-          image: fidasgabriel/aula_deploy_dockerhub
+          image: fidasgabriel/deploy_bandeira
           tags: ${{ github.run_number }}
           registry: docker.io
           dockerfile: dockerfile
