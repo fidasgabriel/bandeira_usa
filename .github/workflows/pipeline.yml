@@ -20,5 +20,5 @@ jobs:
           push: true
           tags: fidasgabriel/deploy_bandeira:latest
         env:
-          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USER }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
