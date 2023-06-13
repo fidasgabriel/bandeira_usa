@@ -16,9 +16,10 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
         with:
-          context: .
-          push: true
-          tags: fidasgabriel/deploy_bandeira:latest
+          image: fidasgabriel/aula_deploy_dockerhub
+          tags: ${{ github.run_number }}
+          registry: docker.io
+          dockerfile: dockerfile
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USER }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
